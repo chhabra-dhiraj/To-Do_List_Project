@@ -1,7 +1,8 @@
 body {
-	background: #16A085;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #F4D03F, #16A085);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #F4D03F, #16A085); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: #134E5E;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #71B280, #134E5E);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #71B280, #134E5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 ul {
@@ -67,7 +68,7 @@ li:nth-of-type(2n + 1) {
 #container {
 	width: 360px;
 	margin: 100px auto;
-	background: #f7f7f7;
+	background-color: #f7f7f7;
 	box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
