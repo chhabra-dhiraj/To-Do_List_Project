@@ -13,6 +13,11 @@ $("ul").on("click", "span", function(event) {
 	});	
 });
 
-$("ul").on("click", "li", function() {
+$("ul").on("click", "li", function(event) {
+	event.stopPropagation();
 	$(this).toggleClass("completed-task");
+});
+
+$("h1 span").on("click", function() {
+	$("input").fadeToggle(500);
 });
