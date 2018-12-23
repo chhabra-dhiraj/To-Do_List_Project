@@ -12,3 +12,7 @@ $("ul").on("click", "span", function(event) {
 		$(this).remove();
 	});	
 });
+
+$("ul").on("click", "li", function() {
+	$(this).toggleClass("completed-task");
+});
