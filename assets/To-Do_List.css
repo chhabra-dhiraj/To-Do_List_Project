@@ -2,7 +2,6 @@ body {
 	background: #16A085;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #F4D03F, #16A085);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #F4D03F, #16A085); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
 
 ul {
@@ -26,6 +25,7 @@ input {
 	border: 10px solid #f7f7f7;
 	box-sizing: border-box;
 	outline: none;
+	display: none;
 }
 
 input:focus {
@@ -35,24 +35,33 @@ input:focus {
 }
 
 li {
-	line-height: 20%;
-}
-
-li span {
-	color: white;
-	background: green;
-	text-align: center;
-	display: inline-block;
-	padding: 3%;
-}
-
-li:nth-of-type(2n + 1) {
-	background: white;
+	line-height: 40px;
 }
 
 h1 span {
 	color: white;
 	float: right;
+}
+
+li span {
+	color: white;
+	visibility: hidden;
+	background: green;
+	text-align: center;
+	display: inline-block;
+	box-sizing: border-box;
+	width: 0;
+	margin-right: 10px; 
+	transition: 0.2s linear;
+}
+
+li:hover span {
+	width: 40px;
+	visibility: visible;
+}
+
+li:nth-of-type(2n + 1) {
+	background: white;
 }
 
 #container {
@@ -63,6 +72,6 @@ h1 span {
 }
 
 .completed-task {
-	color: gray;
+	color: green;
 	text-decoration: line-through;
 }

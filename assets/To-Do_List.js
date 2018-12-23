@@ -2,13 +2,13 @@ $("input").on("keypress", function(event) {
 	if(event.which === 13) {
 		var inputTodo = $(this).val();
 		$(this).val("");
-		$("ul").append("<li><span><i class='fas fa-trash'></i></span> " + inputTodo + "</li>");
+		$("ul").append("<li><span><i class='fas fa-trash'></i></span>        " + inputTodo + "</li>");
 	}
 });
 
 $("ul").on("click", "span", function(event) {	
 	event.stopPropagation();
-	$(this).parent().fadeOut(500, function() {
+	$(this).parent().fadeOut(300, function() {
 		$(this).remove();
 	});	
 });
