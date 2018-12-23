@@ -19,5 +19,5 @@ $("ul").on("click", "li", function(event) {
 });
 
 $("h1 span").on("click", function() {
-	$("input").fadeToggle(500);
+	$("input").fadeToggle();
 });
